@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=200, initial-scale=1.0">
+    <title>Assignment 3 for Thai Nguyen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Assignment 3 <br>
+        Thai Nguyen <br>
+        Instructor: Amandeep Kaur
+    </h1>
+    <hr>
+
+    <h2>Let's play Rock, Paper, Scissor game!</h2><br>
+    <h4>Make your choice here:</h4>
+
+    <!--User's move-->
+    <div id="userMove">
+        <img src="Images/Rock.png" id="rock" onclick="move('rock')" width="150" height="150">
+        <img src="Images/Paper.png" id="paper" onclick="move('paper')" width="150" height="150">
+        <img src="Images/Scissor.png" id="scissor" onclick="move('scissor')" width="150" height="150">
+    </div>
+    <br><br>
+
+    <!--Display User and Computer's moves-->
+    <div id="displaychoices">
+        <div>
+            <h4>Your move: </h4><br>
+            <img id="user-move" src="Images/You.jpg" width="150" height="150">
+        </div>
+
+        <div>
+            <h4>Computer's move: </h4><br>
+            <img id="computer-move" src="Images/AI.jpg" width="150" height="150">
+        </div>
+    </div>
+    <br><br>
+
+    <!--Display score and result-->
+    <div id="score">Score: User -  | Computer - </div>
+    <div id="result"></div>
+
+    <!--Reset and final buttons-->
+    <div id="buttons">
+        <button onclick="resetGame()">Reset Game</button>
+        <button onclick="final()">Final Result</button>
+    </div>
+
+    <script src="gamescript.js"></script>
+</body>
+
+</html>
